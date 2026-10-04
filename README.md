@@ -17,15 +17,6 @@ Plataforma de programação e inglês em Next.js, React e MySQL. Backend integra
 - Validação, consultas parametrizadas, proteção de origem nas escritas, limites de tamanho e tentativas limitadas pelo banco.
 - Estudo sem conta continua disponível, com progresso temporário. Ao entrar, o site carrega os dados da conta; o progresso de visitante não é importado automaticamente.
 
-## Executar neste computador
-
-O ambiente já está configurado em `.env.local`, ignorado pelo Git. Não compartilhe esse arquivo.
-
-```sh
-npm run db:start
-npm run dev
-```
-
 Abra http://127.0.0.1:3000. Use **Entrar / Criar conta** para criar sua própria conta. Aguarde a confirmação de salvamento antes de fechar a página.
 
 O banco local usa **MariaDB 11.2**, compatível com MySQL, na porta **3308**, ligado somente a 127.0.0.1. Foi criada uma instância independente em `../../work/database/data`, sem alterar a instância existente do computador. O usuário da aplicação tem somente SELECT/INSERT/UPDATE/DELETE no banco `code_words`. A senha administrativa local fica em `../../work/database/admin.env`, fora dos arquivos servidos pelo site. Proteja esses arquivos com as permissões do sistema operacional.
