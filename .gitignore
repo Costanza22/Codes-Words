@@ -1,0 +1,12 @@
+node_modules/
+.next/
+out/
+.env*
+!.env.example
+
+# Local captures and operational files
+*-preview.jpg
+preview.jpg
+*.log
+*.pem
+*.sql.gz
